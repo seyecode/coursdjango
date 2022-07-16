@@ -20,4 +20,8 @@ from gestion import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
+    path('accueil/', views.accueil, name="accueil"),
+    path('accueil/<int:id>', views.accueil, name="accueil"),
+    path('a-propos/', views.about, name="a-propos"),
+    path('contacts/', views.contact, name="contact"),
 ]
